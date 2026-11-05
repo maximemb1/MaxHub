@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  /* color: #97887f;
+  background: #313130;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --paper: #2c2c2c;
+  --paper-dark: #1c1b19;
+  --ink: #e9884c;
+  --muted: #827c77;
+  --line: #3b3a38;
+  --orange: #e57c5c;
+  --yellow: #e6c35c;
+  --lavender: #d5d0ef; */
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+:root {
+  --bg-gradient: linear-gradient(135deg, #020817 0%, #08111f 50%, #0d1f39 100%);
+  --card-bg: #18263d;
+  --card-bg-hover: #223759;
+  --text-title: #64b5f6;
+  --text-body: #6587b3;
+  --text-muted: #47596c;
+  --text-sombre: #02283a;
+  --btn-primary: #3995e6;
+  --btn-hover: #5bb3f5;
+  --border-color: rgba(100, 181, 246, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg-gradient) no-repeat center center fixed; 
+  height: 100vh;
+  width: 100vw;
+
+  min-width: 320px;
+  margin: 0;
+
+  overflow-x: hidden;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 4px;
+}
+
+::selection {
+  color: var(--ink);
+  background: var(--yellow);
+}
