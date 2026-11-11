@@ -2,7 +2,7 @@
 
 :root {
   font-family: 'DM Sans', 'Segoe UI', sans-serif;
-  /* color: #97887f;
+ /*  color: #97887f;
   background: #313130;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,6 +26,7 @@
   --card-bg: #18263d;
   --card-bg-hover: #223759;
   --text-title: #64b5f6;
+  --text-second-title: #3aa3fe;
   --text-body: #6587b3;
   --text-muted: #47596c;
   --text-sombre: #02283a;

@@ -1,5 +1,11 @@
 import "./AppM.css";
 import React, { useState, useEffect } from 'react';
+import { jeux, get_stats } from "./utils";
+import { CardStats, CardCB, CardSnake, CardPM } from "./stats";
+import { CardJeux } from "./jeux";
+
+
+const {cb, snake, pm} = get_stats();
 
 function Nom_jeux() {
         // Nom Jeux défilement
@@ -20,7 +26,7 @@ function Nom_jeux() {
 
     return (
         <div className="hero-art-gaming">
-            <span key={currentIndex} className="star-wars-text">
+            <span key={currentIndex} className="text-nom-jeux">
                 {games[currentIndex]}
             </span>
             <p className="art-badge">Gaming</p>
@@ -28,31 +34,28 @@ function Nom_jeux() {
     );
 }
 
-// liste des jeux 
-const jeux = [
-    { id: 1, name: "Casse-Brique", description: "A voir", lien: "https://maximemb1.github.io/casse-briques/"},
-    { id: 2, name: "Snake", description: "A voir", lien: "https://maximemb1.github.io/snake/"},
-    { id: 3, name: "Pac-Man", description: "A voir", lien: "https://maximemb1.github.io/pac-man/"},
-]
+
 
 function AppM() {
     return (
      <>
+        <div className="progress"></div>
+
         <header className="site-header">
             <a className="wordmark" href="#accueil" aria-label="MaxHub, accueil">
                 MaxHub<span>.</span>
             </a>
 
             <nav className="main-nav" aria-label="Navigation principale">
-                <a href="#jeux">JEUX DISPONIBLES</a>
                 <a href="#stats">STATS</a>
+                <a href="#jeux">JEUX DISPONIBLES</a>
                 <a href="#boutique" className="nav-cta">BOUTIQUE<span>↗</span></a>
             </nav>
         </header>
 
         <main>
             <section className="hero page-width" id="accueil">
-                <p className="version"><span className="version-dot" />SERVEURS EN LIGNE • MAXHUB v1.0</p>
+                <p className="eyebrow"><span className="eyebrow-dot" />SERVEURS EN LIGNE • MAXHUB v1.0</p>
 
                 <h1 className="hero-title">Joue, progresse, obtient <br/> des <span className="title-gradient"> récompenses exclusives. </span> </h1>
 
@@ -63,14 +66,33 @@ function AppM() {
                     </a>
                 </div>
                 
-                {Nom_jeux()}
+                <Nom_jeux />
             </section>
 
-            <section className="stats">
+            <section className="stats" id="stats">
+                <div className="s-heading page-width">
+                    <p className="eyebrow">TES PERFORMANCES</p>
+                    <h2>Statistiques globales</h2>
+                </div>
 
+                <div className="grille-stats page-width">
+                    <CardStats titre={jeux.cb.name} content={<CardCB stats={cb} />} />
+                    <CardStats titre={jeux.snake.name} content={<CardSnake stats={snake} />} />
+                    <CardStats titre={jeux.pm.name} content={<CardPM stats={pm} />} />
+                </div>
             </section>
 
-            <section className="jeux">
+            <section className="jeux" id="jeux">
+                <div className="j-heading page-width">
+                    <p className="eyebrow">TES JEUX PREFÉRÉS</p>
+                    <h2>Jeux Web</h2>
+                </div>
+
+                <div className="grille-jeux">
+                    <CardJeux jeux={jeux.cb}></CardJeux>
+                    <CardJeux jeux={jeux.snake}></CardJeux>
+                    <CardJeux jeux={jeux.pm}></CardJeux>
+                </div>
 
             </section>
         </main>
@@ -80,7 +102,7 @@ function AppM() {
                 MaxHub<span>.</span>
             </a>
             <p> © 2026 MaxHub. Tous droits réservés.</p>
-            <a className="footer-cta" href="accueil">Retour en haut <span>↑</span></a>
+            <a className="footer-cta" href="#accueil">Retour en haut <span>↑</span></a>
         </footer>
         
      </>        
