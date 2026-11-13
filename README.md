@@ -82,6 +82,7 @@ L'application charge les données de statistiques enregistrées dans le navigate
 Ce projet est pensé comme un hub personnel gaming, avec une logique simple de récupération des scores et de présentation de l'expérience de jeu.
 
 
-
+##Idées
+apparition jeux en bille 
 
 
