@@ -33,7 +33,7 @@ export function CardSnake({stats}){
         </div>
     )
 }
-/* manque partie jouées dans localstorage pour snake + bug pour longueur max */
+/* manque partie jouées dans localstorage pour snake + bug pour longueur max + pommes mangées qui fait = au lieu de += */
 
 export function CardPM({stats}){
     return (

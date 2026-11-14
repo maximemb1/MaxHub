@@ -523,15 +523,40 @@ header {
     font-size: clamp(2rem, 5vw, 3.4rem);
     letter-spacing: 1.25px;
     margin-top: auto;
+
+    animation: appTextCentre linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+@keyframes appTextCentre {
+    0% {
+        opacity: 0;
+        letter-spacing: 12px;
+        filter: blur(8px);
+        transform: translateY(250px);
+    }
+    70% {
+        letter-spacing: 8px;
+    }
+    100% {
+        opacity: 1;
+        letter-spacing: 1.25px;
+        filter: blur(0);
+    }
 }
 
 .grille-jeux {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     
     align-items: stretch;
     width: min(1220px, calc(100% - 48px));
+}
+@media (max-width: 768px) {
+    .grille-jeux{
+        grid-template-columns: 1fr;
+    }
 }
 .card-jeu {
     display: flex;
@@ -543,18 +568,44 @@ header {
     margin: 1.5rem;
     padding: 1.5rem;
 
-    border: 1px solid var(--border-color);
-    border-radius: 24px 10px;
+    border: 1px solid var(--btn-primary);
+    border-radius: 34px 10px;
+    transition: box-shadow 0.6s ease, border-radius 0.5s ease, transform 0.5s ease;
+}
+.card-jeu:hover {
+    box-shadow: 0 0 24px var(--text-title);
+    border-radius: 10px 34px;
+    transform: translateY(-10px) translateX(6px);
 }
 .card-jeu > h3 {
     font-size: clamp(1.1rem, 2.6vw, 2.6rem);
     color: var(--text-second-title);
 }
+.card-jeu > img {
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 24px;
+}
 .card-jeu > p {
     font-size: clamp(0.8rem, 2vw, 1.3rem);
     line-height: clamp(1.3rem, 2vw, 1.7rem);
-    color: var(--text-body);
     text-align: center;
+
+    background: var(--text-body);
+    background-size: 200% 200%;
+    background-position: 0% 50%; /* Position de départ fixe */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.card-jeu:hover > p {
+    background: linear-gradient(124deg, var(--text-body) 0%, rgb(41, 116, 144) 50%, var(--text-body) 100%);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colorAnimP 3s ease infinite ;
 }
 .card-jeu > a {
     font-size: clamp(1rem, 2.4vw, 2.2rem);
@@ -562,6 +613,52 @@ header {
     border: 1px solid var(--btn-primary);
     border-radius: 999px;
     padding: 0.7rem 1.1rem;
+    width: 10rem;
+    text-align: center;
+    transition: box-shadow 0.5s ease;
+}
+.card-jeu:hover > a {
+    animation: switchBorderColor 1.3s ease-in-out alternate infinite;
+}
+.card-jeu > a:hover {
+    border-color: var(--btn-primary);
+    box-shadow: 0 0 6px var(--text-body);
+}
+@keyframes switchBorderColor {
+    0% {
+        border-color: var(--btn-primary);
+    }
+    100% {
+        border-color: var(--text-sombre);
+    }
+}
+
+@keyframes colorAnimP {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card-jeu:nth-child(1){
+    animation: cardGauche linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.card-jeu:nth-child(2){
+    animation: cardDroite linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.card-jeu:nth-child(3){
+    animation: cardGauche linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 /* Footer */

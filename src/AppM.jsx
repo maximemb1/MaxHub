@@ -49,7 +49,7 @@ function AppM() {
             <nav className="main-nav" aria-label="Navigation principale">
                 <a href="#stats">STATS</a>
                 <a href="#jeux">JEUX DISPONIBLES</a>
-                <a href="#boutique" className="nav-cta">BOUTIQUE<span>↗</span></a>
+                <a href="./boutique.html" className="nav-cta">BOUTIQUE<span>↗</span></a>
             </nav>
         </header>
 
