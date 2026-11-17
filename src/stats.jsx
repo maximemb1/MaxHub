@@ -15,7 +15,7 @@ export function CardCB({stats}){
         <div className="stat">
             <p>Meilleur score : {stats?.meilleur_score?.base ?? 0} </p>
             <p>Briques cassées : {stats?.stats?.briques_casse ?? 0}</p>
-            <p>Or obetenu : {stats?.stats.or_ttl ?? 0}</p>
+            <p>Or obetenu : {stats?.stats?.or_ttl ?? 0}</p>
             <p>Parties jouées : {stats?.stats?.parties_jouees ?? 0}</p>
         </div>
     )
