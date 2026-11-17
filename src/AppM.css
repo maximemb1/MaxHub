@@ -764,6 +764,7 @@ header {
         font-size: 1.6rem;
         font-weight: 700;
         letter-spacing: -1px;
+        margin-left: 0.4rem;
     }
     .hero-bottom {
         flex-direction: column;
@@ -772,6 +773,7 @@ header {
     }
     .hero-bottom > p {
         max-width: 100%;
+        text-align: center;
     }
     
 
