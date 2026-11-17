@@ -49,7 +49,7 @@ function AppM() {
             <nav className="main-nav" aria-label="Navigation principale">
                 <a href="#stats">STATS</a>
                 <a href="#jeux">JEUX DISPONIBLES</a>
-                <a href="./boutique.html" className="nav-cta">BOUTIQUE<span>↗</span></a>
+                <a href="#./boutique.html" className="nav-cta">BOUTIQUE<span>↗</span></a>
             </nav>
         </header>
 
@@ -57,7 +57,7 @@ function AppM() {
             <section className="hero page-width" id="accueil">
                 <p className="eyebrow"><span className="eyebrow-dot" />SERVEURS EN LIGNE • MAXHUB v1.0</p>
 
-                <h1 className="hero-title">Joue, progresse, obtient <br/> des <span className="title-gradient"> récompenses exclusives. </span> </h1>
+                <h1 className="hero-title">Joue, progresse, obtient <br/> des <span className="title-gradient"> items exclusives. </span> </h1>
 
                 <div className="hero-bottom">
                     <p>Une plateforme pensée pour regrouper tout tes jeux web préférés, suivre tes performances et débloquer des items exclusifs dans tes jeux ! </p>
@@ -101,7 +101,7 @@ function AppM() {
             <a className="wordmark" href="#accueil" aria-label="MaxHub, accueil">
                 MaxHub<span>.</span>
             </a>
-            <p> © 2026 MaxHub. Tous droits réservés.</p>
+            <p> © 2026 MaxHub.</p>
             <a className="footer-cta" href="#accueil">Retour en haut <span>↑</span></a>
         </footer>
         
