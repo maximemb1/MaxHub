@@ -1,8 +1,8 @@
 // liste des jeux 
 export const jeux = {
-   cb: { id: 1, name: "Casse-Brique", description: "Détruis les blocs, récupère un maximum d'or et fais rebondir ta balle sans jamais la faire tomber ! Personalise ton expérience en achetant toute le magasin", lien: "https://maximemb1.github.io/casse-briques/", img: "/src/assets/cb.png", cle_local:"save_case_briques"},
-   snake: { id: 2, name: "Snake", description: "Guide ton serpent à travers la grille, mange des pommes pour grandir et fais attention à ne pas percuter les murs ou ta propre queue", lien: "https://maximemb1.github.io/snake/", img: "/src/assets/snake.png", cle_local: "save_snake"},
-   pm: { id: 3, name: "Pac-Man", description: "Navigue dans le labyrinthe, engloutis toutes les billes et échappe aux fantômes... à moins que tu ne croques une super-bille pour inverser les rôles !", lien: "https://maximemb1.github.io/pac-man/", img: "/src/assets/pm.png", cle_local: "save_pacman"},
+   cb: { id: 1, name: "Casse-Brique", description: "Détruis les blocs, récupère un maximum d'or et fais rebondir ta balle sans jamais la faire tomber ! Personalise ton expérience en achetant toute le magasin", lien: "https://maximemb1.github.io/casse-briques/", img: "/cb.png", cle_local:"save_case_briques"},
+   snake: { id: 2, name: "Snake", description: "Guide ton serpent à travers la grille, mange des pommes pour grandir et fais attention à ne pas percuter les murs ou ta propre queue", lien: "https://maximemb1.github.io/snake/", img: "/snake.png", cle_local: "save_snake"},
+   pm: { id: 3, name: "Pac-Man", description: "Navigue dans le labyrinthe, engloutis toutes les billes et échappe aux fantômes... à moins que tu ne croques une super-bille pour inverser les rôles !", lien: "https://maximemb1.github.io/pac-man/", img: "/pm.png", cle_local: "save_pacman"},
 }
 
 export const get_stats = () => {
