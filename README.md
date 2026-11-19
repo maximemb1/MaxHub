@@ -84,6 +84,6 @@ Ce projet est pensé comme un hub personnel gaming, avec une logique simple de r
 
 ### ⚙️ Idées
 
-L'or total sera convertie en crédits pour acheter des items exclus
+L'or total et les billes pour pacman seront convertie en crédits pour acheter des items exclus
 
 
