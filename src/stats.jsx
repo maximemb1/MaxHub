@@ -26,7 +26,7 @@ export function CardSnake({stats}){
         <div className="stat">
             <p>Meilleur score : {stats?.stats?.meilleur_score ?? 0} </p>
             <p>Pommes Mangées : {stats?.stats?.pommes_mangees ?? 0}</p>
-            <p>Longueur maximal : {stats?.stats?.longueur_max ?? 0}</p>
+            <p>Longueur totale : {stats?.stats?.longueur_max ?? 0}</p>
             <p>Or obetenu : {stats?.stats?.or_ttl ?? 0}</p>
             <p>Parties jouées : {stats?.stats?.parties_jouees ?? 0}</p>
             

@@ -683,7 +683,6 @@ header {
 
     /* barre des touches mobiles */
     padding-bottom: calc(2rem + env(safe-area-inset-bottom));
-    background: linear-gradient(to bottom, transparent, #0d1f39);
 }
 .footer p {
     margin: 0;
