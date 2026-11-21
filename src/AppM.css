@@ -680,6 +680,9 @@ header {
     margin-top: 4rem;
     border-top: 1px solid var(--border-color);
     color: var(--text-muted);
+
+    padding-bottom: env(safe-area-inset-bottom);
+    background-color: var(--bg-gradient);
 }
 .footer p {
     margin: 0;
