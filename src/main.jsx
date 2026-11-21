@@ -9,5 +9,3 @@ createRoot(document.getElementById('root')).render(
     <AppM />
   </StrictMode>,
 )
-
-console.log(window.innerWidth)

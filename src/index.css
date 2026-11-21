@@ -2,26 +2,9 @@
 
 :root {
   font-family: 'DM Sans', 'Segoe UI', sans-serif;
- /*  color: #97887f;
-  background: #313130;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  --paper: #2c2c2c;
-  --paper-dark: #1c1b19;
-  --ink: #e9884c;
-  --muted: #827c77;
-  --line: #3b3a38;
-  --orange: #e57c5c;
-  --yellow: #e6c35c;
-  --lavender: #d5d0ef; */
-
   font-optical-sizing: auto;
   font-weight: 400;
-}
-:root {
+  
   --bg-gradient: linear-gradient(135deg, #020817 0%, #08111f 50%, #0d1f39 100%);
   --card-bg: #18263d;
   --card-bg-hover: #223759;

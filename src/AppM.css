@@ -349,7 +349,7 @@ header {
     margin-top: auto;
     animation: appTextParDroite linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 0% cover 35%;
 }
 @keyframes appTextParDroite {
     0% {
@@ -420,45 +420,45 @@ header {
 .stat-card:nth-child(1) {
     animation: cardGauche linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
 }
 .stat-card:nth-child(2) {
     animation: cardCentre linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 25%;
 }
 .stat-card:nth-child(3) {
     animation: cardDroite linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 25%;
 }
 @media (max-width: 800px) {  /* a modifier pour 100% de responsive */
     .stat-card:nth-child(3) {
         animation: cardGauche linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+        animation-range: entry 0% cover 25%;
     }
     .stat-card:nth-child(2) {
         animation: cardDroite linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+        animation-range: entry 0% cover 25%;
     }
 }
 @media (max-width: 550px) {
     .stat-card:nth-child(3) {
         animation: cardCentre linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+        animation-range: entry 0% cover 25%;
     }
     .stat-card:nth-child(2) {
         animation: cardCentre linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+        animation-range: entry 0% cover 25%;
     }
     .stat-card:nth-child(1) {
         animation: cardCentre linear;
         animation-timeline: view();
-        animation-range: entry 0% cover 40%;
+        animation-range: entry 0% cover 30%;
     }
 }
 
@@ -526,7 +526,7 @@ header {
 
     animation: appTextCentre linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 0% cover 40%;
 }
 @keyframes appTextCentre {
     0% {
@@ -573,7 +573,7 @@ header {
     transition: box-shadow 0.6s ease, border-radius 0.5s ease, transform 0.5s ease;
     animation: appBoule linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 30%;
 }
 .card-jeu:hover {
     box-shadow: 0 0 24px var(--text-title);
@@ -585,7 +585,7 @@ header {
     color: var(--text-second-title);
 }
 .card-jeu > img {
-    max-height: 120px;
+    max-height: 140px;
     object-fit: cover;
     border-radius: 24px;
 }
@@ -791,6 +791,9 @@ header {
         margin: 0.5rem 0;
         padding: 1rem;
         gap: 1.5rem;
+    }
+    .card-jeu > img {
+        max-height: 80px;
     }
 
 

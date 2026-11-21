@@ -1,6 +1,6 @@
 # MaxHub
 
-MaxHub est une plateforme web de type hub gaming qui regroupe plusieurs mini-jeux, affiche les statistiques du joueur et met en avant une expérience immersive de progression et de récompenses.
+[MaxHub est une plateforme web](https://maximemb1.github.io/MaxHub) de type hub gaming qui regroupe plusieurs mini-jeux, affiche les statistiques du joueur et met en avant une expérience immersive de progression et de récompenses.
 
 Le projet a été conçu pour centraliser l'accès à des jeux web, suivre les performances via le stockage local du navigateur et offrir une interface moderne et ludique.
 
@@ -80,9 +80,3 @@ L'application charge les données de statistiques enregistrées dans le navigate
 ## 📌 Notes
 
 Ce projet est pensé comme un hub personnel gaming, avec une logique simple de récupération des scores et de présentation de l'expérience de jeu.
-
-
-##Idées
-apparition jeux en bille 
-
-

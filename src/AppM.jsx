@@ -11,16 +11,13 @@ function Nom_jeux() {
         // Nom Jeux défilement
     const games = ["CASSE-BRIQUES", "SNAKE", "PAC-MAN"];
     
-    //L'index du jeu affiché actuellement
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // timer qui change de jeu toutes les 3 secondes (3000 ms)
     useEffect(() => {
         const interval = setInterval(() => {
         setCurrentIndex((index_act) => (index_act + 1) % games.length);
         }, 4000);
 
-        // Nettoyage du timer si le composant est démonté
         return () => clearInterval(interval);
     }, [games.length]);
 
