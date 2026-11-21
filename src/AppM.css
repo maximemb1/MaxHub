@@ -681,8 +681,9 @@ header {
     border-top: 1px solid var(--border-color);
     color: var(--text-muted);
 
-    padding-bottom: env(safe-area-inset-bottom);
-    background-color: var(--bg-gradient);
+    /* barre des touches mobiles */
+    padding-bottom: calc(2rem + env(safe-area-inset-bottom));
+    background: linear-gradient(to bottom, transparent, #0d1f39);
 }
 .footer p {
     margin: 0;
