@@ -28,7 +28,7 @@ export function CardSnake({stats}){
             <p>Pommes Mangées : {stats?.stats?.pommes_mangees ?? 0}</p>
             <p>Longueur totale : {stats?.stats?.longueur_max ?? 0}</p>
             <p>Or obetenu : {stats?.stats?.or_ttl ?? 0}</p>
-            <p>Parties jouées : {stats?.stats?.parties_jouees ?? 0}</p>
+            <p>Parties jouées : {stats?.stats?.partie_jouees ?? 0}</p>
             
         </div>
     )

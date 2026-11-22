@@ -18,7 +18,7 @@ export const get_stats = () => {
         const stats_snake = save_snake ? JSON.parse(save_snake) : null;
         const stats_pm = save_pm ? JSON.parse(save_pm) : null;
 
-
+        console.log(stats_snake.stats?.partie_jouees)
         return {
             cb: stats_cb ?? 0,
             snake: stats_snake ?? 0,
